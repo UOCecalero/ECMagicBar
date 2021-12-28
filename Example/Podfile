@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ECMagicBar_Example' do
+  pod 'ECMagicBar', :path => '../'
+
+  target 'ECMagicBar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
