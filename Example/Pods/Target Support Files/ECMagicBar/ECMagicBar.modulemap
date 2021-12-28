@@ -1,0 +1,6 @@
+framework module ECMagicBar {
+  umbrella header "ECMagicBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

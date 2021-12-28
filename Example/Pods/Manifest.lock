@@ -1,0 +1,16 @@
+PODS:
+  - ECMagicBar (0.1.0)
+
+DEPENDENCIES:
+  - ECMagicBar (from `../`)
+
+EXTERNAL SOURCES:
+  ECMagicBar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ECMagicBar: 692d8dc0b38d1429c4c71fa9af20fbf4cd2de6b9
+
+PODFILE CHECKSUM: 09bd7b4ad034db1d44484868eba1bff6f80338ef
+
+COCOAPODS: 1.11.2

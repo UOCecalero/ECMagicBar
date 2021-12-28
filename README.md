@@ -22,8 +22,8 @@ pod 'ECMagicBar'
 
 ## Author
 
-Eduard Calero, ecalero@doonamis.es
+Eduard Calero, educalero@icloud.com
 
 ## License
 
-ECMagicBar is available under the MIT license. See the LICENSE file for more info.
+ECMagicBar is available under the GNU GPLv2.1 license. See the LICENSE file for more info.
