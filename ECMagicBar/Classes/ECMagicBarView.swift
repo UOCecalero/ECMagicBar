@@ -35,6 +35,8 @@ public class ECMagicBarView: UIView {
     var buttonsColor: UIColor = .systemBlue
     var textfieldFont: UIFont  = UIFont.systemFont(ofSize: 18)
     var placeholder: String = ""
+    var borderColor: UIColor = .black
+    var borderWidth: CGFloat = 0.2
     
     var textfieldCurrentNumberOfLines: Int = 0 {
         didSet {
@@ -63,6 +65,8 @@ public class ECMagicBarView: UIView {
                      buttonsColor: UIColor? = nil,
                      font: UIFont? = nil,
                      placeholder: String = "",
+                     borderColor: UIColor? = nil,
+                     borderWidth: CGFloat? = nil,
                      delegate: ECMagicBarViewDelegate? = nil
     ) {
         
@@ -76,6 +80,8 @@ public class ECMagicBarView: UIView {
         self.textfieldFont = UIFont.systemFont(ofSize: 18)
         self.placeholder = placeholder
         self.delegate = delegate
+        self.borderColor = borderColor ?? .black
+        self.borderWidth = borderWidth ?? 0.2
         
         configUI()
         
@@ -92,6 +98,8 @@ public class ECMagicBarView: UIView {
                      buttonsColor: UIColor? = nil,
                      font: UIFont? = nil,
                      placeholder: String = "",
+                             borderColor: UIColor? = nil,
+                             borderWidth: CGFloat? = nil,
                      delegate: ECMagicBarViewDelegate? = nil
     ) {
         
@@ -105,6 +113,8 @@ public class ECMagicBarView: UIView {
         self.textfieldFont = UIFont.systemFont(ofSize: 18)
         self.placeholder = placeholder
         self.delegate = delegate
+        self.borderColor = borderColor ?? .black
+        self.borderWidth = borderWidth ?? 0.2
         
         configUI()
         
@@ -120,8 +130,8 @@ public class ECMagicBarView: UIView {
     
     fileprivate func configUI() {
         
-        viewFromNIB(bundle:  Bundle(for: type(of: self)),
-                                  nameXib: "ChatToolBarView")
+        viewFromNIB(bundle: Bundle(for: type(of: self)),
+                                  nameXib: "ECMagicBarView")
         
         self.autoresizingMask = [
                 UIView.AutoresizingMask.flexibleHeight
@@ -134,6 +144,8 @@ public class ECMagicBarView: UIView {
         textView.backgroundColor = textBackgroundColor
         textView.tintColor = cursorColor
         textView.font = textfieldFont
+        textView.layer.borderColor = borderColor.cgColor
+        textView.layer.borderWidth = borderWidth
         
         showCameraButton()
         
@@ -291,14 +303,14 @@ extension ECMagicBarView: UINavigationControllerDelegate, UIImagePickerControlle
         
         
 
-        if let image = info[.editedImage] as? UIImage {
+        if let image = info[UIImagePickerController.InfoKey.init(stringLiteral: "EditedImage")] as? UIImage {
             
             // Save the new image (original or edited) to the Camera Roll
             UIImageWriteToSavedPhotosAlbum (image, nil, nil , nil)
             picker.dismiss(animated: true)
             delegate?.didGetImage(image)
             
-        } else if let videoUrl = info[.mediaURL] as? URL {
+        } else if let videoUrl = info[UIImagePickerController.InfoKey.init(stringLiteral: "MediaURL")] as? URL {
             
             // Save the new image (original or edited) to the Camera Roll
             UISaveVideoAtPathToSavedPhotosAlbum (videoUrl.path, nil, nil , nil);

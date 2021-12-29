@@ -21,5 +21,14 @@
     "ios": "13.0"
   },
   "source_files": "ECMagicBar/Classes/**/*",
+  "resource_bundles": {
+    "ECMagicBar": [
+      "ECMagicBar/**/*.xib"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "MobileCoreServices"
+  ],
   "swift_version": "4.0"
 }

@@ -22,10 +22,10 @@ class ViewController: UIViewController {
                                       height: 0 ))
                          
        let inputAccessory = ECMagicBarView(frame: rect,
-                                            barColor: .white,
+                                           barColor: UIColor.systemGray6,
                                             cursorColor: UIColor.systemBlue,
                                             textColor: nil,
-                                            backGroundTextColor: UIColor.lightGray,
+                                            backGroundTextColor: UIColor.white,
                                             buttonsTintColor: nil,
                                             buttonsColor: UIColor.systemBlue,
                                             placeholder: "Write sth here...",
