@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     
     
     fileprivate func configureTableView() {
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100
         tableView.backgroundColor = .lightGray
     }
@@ -143,10 +143,10 @@ extension ViewController {
                  self.tableView.addGestureRecognizer(tapView)
 
       
-         NotificationCenter.default.addObserver(forName: .UIKeyboardWillShow, object: nil, queue: nil) { [weak self] notification in
+         NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil) { [weak self] notification in
                     self?.keyboardNotification(notification:notification)
               }
-         NotificationCenter.default.addObserver(forName: .UIKeyboardWillHide, object: nil, queue: nil) { [weak self] notification in
+         NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: nil) { [weak self] notification in
                     self?.keyboardNotification(notification:notification)
               }
 
@@ -154,20 +154,20 @@ extension ViewController {
     
 
      func removeListeners() {
-         NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
-         NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
+         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
     /// Magic fix for keyboard
      func keyboardNotification(notification: Notification) {
         if let userInfo = notification.userInfo {
-            guard let keyboardFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
-            let duration: TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
-            let animationCurveRawNSN = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber
+            guard let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
+            let duration: TimeInterval = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
+            let animationCurveRawNSN = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber
             let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIView.AnimationOptions.curveEaseInOut.rawValue
             let animationCurve: UIView.AnimationOptions = UIView.AnimationOptions(rawValue: animationCurveRaw)
 
-            if notification.name == .UIKeyboardWillHide {
+            if notification.name == UIResponder.keyboardWillHideNotification {
                     self.additionalSafeAreaInsets.bottom = -view.safeAreaInsets.bottom
             } else {
                 
