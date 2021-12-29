@@ -15,8 +15,8 @@
 		37E3167857C72257611A0D7C88283A58 /* ECMagicBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 842B5D8CF73F6DE8A97C085453470735 /* ECMagicBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		407B61769CA4024B69E35F8D2AC22F43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4264C71F15E57971C98CB01EE2A559 /* Foundation.framework */; };
 		5B7F08862D56ED7E6F44899F524C2672 /* Pods-ECMagicBar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B312233DB51752386F321CBB900CF64 /* Pods-ECMagicBar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BCFC7B8277CEF2D00A7366A /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCFC7B7277CEF2D00A7366A /* CoreServices.framework */; };
 		6FFE79D32C223B32BEA97D829D9B517A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B758CD103E1A949215EB7D8440C5EEB2 /* UIKit.framework */; };
-		734A2FBE94D87C1AB59BEE81625C817D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F103D8625F657C6EF8D046BCA440975C /* MobileCoreServices.framework */; };
 		94C37ACE121D333E6F05755A6014DEFB /* ECMagicBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150571C503ECBCE56F0AF038946F6F72 /* ECMagicBarView.swift */; };
 		9B69F3D2EB15D7E3675758AA52D632EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4264C71F15E57971C98CB01EE2A559 /* Foundation.framework */; };
 		C9910E6BCD5DECAC637485878C23A8A4 /* Pods-ECMagicBar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 704EF97846B94E13E365F53D07790D3D /* Pods-ECMagicBar_Tests-dummy.m */; };
@@ -66,6 +66,7 @@
 		654AB696B6595CA14463FEB80ED1CF4F /* Pods-ECMagicBar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ECMagicBar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6A9B2FB897090AB245F3BDFF8B27D2F3 /* ECMagicBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ECMagicBar.release.xcconfig; sourceTree = "<group>"; };
 		6AE84F1AB3B9FD1F392F0DA1EADDE871 /* Pods-ECMagicBar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ECMagicBar_Tests.modulemap"; sourceTree = "<group>"; };
+		6BCFC7B7277CEF2D00A7366A /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		6E27147ADE0D5A25DB9BDABD6E4BA65E /* Pods-ECMagicBar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ECMagicBar_Tests-Info.plist"; sourceTree = "<group>"; };
 		6F4264C71F15E57971C98CB01EE2A559 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6F52986873A0C8241CF6FDB91F98E625 /* Pods-ECMagicBar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ECMagicBar_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -97,8 +98,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B69F3D2EB15D7E3675758AA52D632EB /* Foundation.framework in Frameworks */,
-				734A2FBE94D87C1AB59BEE81625C817D /* MobileCoreServices.framework in Frameworks */,
 				6FFE79D32C223B32BEA97D829D9B517A /* UIKit.framework in Frameworks */,
+				6BCFC7B8277CEF2D00A7366A /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +132,7 @@
 		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6BCFC7B7277CEF2D00A7366A /* CoreServices.framework */,
 				A19106A69937C482AB72491FEAAD027A /* iOS */,
 			);
 			name = Frameworks;

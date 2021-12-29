@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ECMagicBar'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A chat textbar for iOS inspired in whatssap app.'
 
   s.description      = <<-DESC
@@ -19,7 +19,7 @@ A customizable chat textbar inspired in whatssap iOS app. You can implement your
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'LGPLv2.1', :file => 'LICENSE' }
   s.author           = { 'Eduard Calero' => 'educalero@icloud.com' }
-  s.source           = { :git => 'https://github.com/UOCecalero/ECMagicBar.git', :tag => 'v0.1.0' }
+  s.source           = { :git => 'https://github.com/UOCecalero/ECMagicBar.git', :tag => 'v0.1.1' }
   s.social_media_url = 'https://twitter.com/CaleroEduard'
   s.swift_version = '5.0'
 
