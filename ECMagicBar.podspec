@@ -19,7 +19,7 @@ A customizable chat textbar inspired in whatssap iOS app. You can implement your
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'LGPLv2.1', :file => 'LICENSE' }
   s.author           = { 'Eduard Calero' => 'educalero@icloud.com' }
-  s.source           = { :git => 'https://github.com/UOCecalero/ECMagicBar.git', :tag => '0.1.0' }
+  s.source           = { :git => 'https://github.com/UOCecalero/ECMagicBar.git', :tag => 'v0.1.0' }
   s.social_media_url = 'https://twitter.com/CaleroEduard'
   s.swift_version = '4.0'
 
