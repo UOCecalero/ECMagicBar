@@ -9,13 +9,22 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## HowTo
+## Installation
+
+ECMagicBar is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'ECMagicBar'
+```
+
+## Usage
 
 1. Add the library to your repo
 
 2. Add the following lines to your viewController
 
-<code>
+```swift
 
     lazy var inputAccessory: ECMagicBarView = {
        let rect = CGRect(origin: CGPoint(x: 0,
@@ -44,11 +53,12 @@ To run the example project, clone the repo, and run `pod install` from the Examp
     override var canBecomeFirstResponder: Bool {
         return true
     }
-</code>
+```
 
-3. Implement the ECMagicBarViewDelegate. Notice that if you want to update the button status, you must call refreshSendButtonStatus() method. Example
 
-<code>
+3. Implement the ``` ECMagicBarViewDelegate```. Notice that if you want to update the button status, you must call ``` refreshSendButtonStatus()``` method. Example
+
+```swift
 
 extension ViewController: ECMagicBarViewDelegate {
     func didSendMessage(_ text: String) {
@@ -95,20 +105,13 @@ extension ViewController: ECMagicBarViewDelegate {
 
 }
 
-</code>
+```
 
 4. Thatst's it:
 
+https://user-images.githubusercontent.com/8016164/147683487-370d255c-670c-4df9-b088-6a4239770e19.mov
 
 
-## Installation
-
-ECMagicBar is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'ECMagicBar'
-```
 
 ## Author
 
