@@ -299,18 +299,18 @@ extension ECMagicBarView {
 
 extension ECMagicBarView: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         
 
-        if let image = info[UIImagePickerController.InfoKey.init(stringLiteral: "EditedImage")] as? UIImage {
+        if let image = info[UIImagePickerController.InfoKey.init(rawValue: "EditedImage")] as? UIImage {
             
             // Save the new image (original or edited) to the Camera Roll
             UIImageWriteToSavedPhotosAlbum (image, nil, nil , nil)
             picker.dismiss(animated: true)
             delegate?.didGetImage(image)
             
-        } else if let videoUrl = info[UIImagePickerController.InfoKey.init(stringLiteral: "MediaURL")] as? URL {
+        } else if let videoUrl = info[UIImagePickerController.InfoKey.init(rawValue: "MediaURL")] as? URL {
             
             // Save the new image (original or edited) to the Camera Roll
             UISaveVideoAtPathToSavedPhotosAlbum (videoUrl.path, nil, nil , nil);
