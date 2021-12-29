@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import MobileCoreServices
+import CoreServices
 
 
 public protocol ECMagicBarViewDelegate: UIViewController {
@@ -98,9 +98,9 @@ public class ECMagicBarView: UIView {
                      buttonsColor: UIColor? = nil,
                      font: UIFont? = nil,
                      placeholder: String = "",
-                             borderColor: UIColor? = nil,
-                             borderWidth: CGFloat? = nil,
-                     delegate: ECMagicBarViewDelegate? = nil
+                     borderColor: UIColor? = nil,
+                     borderWidth: CGFloat? = nil,
+                     delegate: ECMagicBarViewDelegate? = nil
     ) {
         
         self.init(coder: coder)
@@ -130,7 +130,7 @@ public class ECMagicBarView: UIView {
     
     fileprivate func configUI() {
         
-        viewFromNIB(bundle: Bundle(for: type(of: self)),
+        _ = viewFromNIB(bundle: Bundle(for: type(of: self)),
                                   nameXib: "ECMagicBarView")
         
         self.autoresizingMask = [
@@ -299,7 +299,7 @@ extension ECMagicBarView {
 
 extension ECMagicBarView: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         
 

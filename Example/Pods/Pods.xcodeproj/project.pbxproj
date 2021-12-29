@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0135AC2DE5C69023EFF6BE5FB246FB34 /* Pods-ECMagicBar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4988E2085E5163ACDBF8A236ACCCBED9 /* Pods-ECMagicBar_Example-dummy.m */; };
-		0334BE5BC7F3291EE8FD88D4480E1087 /* ECMagicBar-ECMagicBar in Resources */ = {isa = PBXBuildFile; fileRef = AC64B97E6CC2C081724B3E0A4A27B9E5 /* ECMagicBar-ECMagicBar */; };
+		0334BE5BC7F3291EE8FD88D4480E1087 /* ECMagicBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC64B97E6CC2C081724B3E0A4A27B9E5 /* ECMagicBar.bundle */; };
 		090FEFA052D21C5922C33EA772A50414 /* Pods-ECMagicBar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D46B3876ADCA6DE06E752F125498B2A /* Pods-ECMagicBar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		160A33F195EA16E900A21A16A0931A92 /* ECMagicBarView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 32F96BA4CBF1F4CD888B1FC6876FA1FC /* ECMagicBarView.xib */; };
 		241E27D2A3E54AE42EF46D121D0CAC71 /* ECMagicBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE18D707D0197BBE78544F0C3B77C42 /* ECMagicBar-dummy.m */; };
@@ -55,12 +55,12 @@
 		150571C503ECBCE56F0AF038946F6F72 /* ECMagicBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECMagicBarView.swift; path = ECMagicBar/Classes/ECMagicBarView.swift; sourceTree = "<group>"; };
 		16F8CA48AFA4D90F12C42DED90832916 /* Pods-ECMagicBar_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ECMagicBar_Example-Info.plist"; sourceTree = "<group>"; };
 		1A6EFFD4BC8CB12E8C5D60CCCB01F7EB /* Pods-ECMagicBar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ECMagicBar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		27747D4EC91225B575275481FF7353CE /* ECMagicBar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ECMagicBar; path = ECMagicBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27747D4EC91225B575275481FF7353CE /* ECMagicBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECMagicBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC52DCB2C0FEC46905513BA03903158 /* Pods-ECMagicBar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ECMagicBar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2EE18D707D0197BBE78544F0C3B77C42 /* ECMagicBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ECMagicBar-dummy.m"; sourceTree = "<group>"; };
 		3065FD945998813B1BDE844E49C8C1E5 /* ECMagicBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ECMagicBar.modulemap; sourceTree = "<group>"; };
 		32F96BA4CBF1F4CD888B1FC6876FA1FC /* ECMagicBarView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ECMagicBarView.xib; path = ECMagicBar/Classes/ECMagicBarView.xib; sourceTree = "<group>"; };
-		3AF09287D7DCEE34CA33A3C9D73A8FD9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3AF09287D7DCEE34CA33A3C9D73A8FD9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3D46B3876ADCA6DE06E752F125498B2A /* Pods-ECMagicBar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ECMagicBar_Example-umbrella.h"; sourceTree = "<group>"; };
 		4988E2085E5163ACDBF8A236ACCCBED9 /* Pods-ECMagicBar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ECMagicBar_Example-dummy.m"; sourceTree = "<group>"; };
 		654AB696B6595CA14463FEB80ED1CF4F /* Pods-ECMagicBar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ECMagicBar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -73,11 +73,11 @@
 		785988F25775D1A32FD560337F12D223 /* Pods-ECMagicBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ECMagicBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		842B5D8CF73F6DE8A97C085453470735 /* ECMagicBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ECMagicBar-umbrella.h"; sourceTree = "<group>"; };
 		8A0E82E9A7E80C3A21BF6D3835FD0A85 /* Pods-ECMagicBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ECMagicBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8AFD3275851D4A6336FC86A48C45A59D /* Pods-ECMagicBar_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ECMagicBar_Example"; path = Pods_ECMagicBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		912069B67B269F0DA4C78028EB32EBA0 /* ECMagicBar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ECMagicBar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8AFD3275851D4A6336FC86A48C45A59D /* Pods_ECMagicBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECMagicBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		912069B67B269F0DA4C78028EB32EBA0 /* ECMagicBar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ECMagicBar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A109C195070134CB0500AAC2B3259A35 /* ECMagicBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ECMagicBar-prefix.pch"; sourceTree = "<group>"; };
-		AC64B97E6CC2C081724B3E0A4A27B9E5 /* ECMagicBar-ECMagicBar */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ECMagicBar-ECMagicBar"; path = ECMagicBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC64B97E6CC2C081724B3E0A4A27B9E5 /* ECMagicBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECMagicBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B422612136497D052DE3C2E8B0DD86A4 /* Pods-ECMagicBar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ECMagicBar_Example.modulemap"; sourceTree = "<group>"; };
 		B619FF3672B83AFF676BC902EAFE03B1 /* Pods-ECMagicBar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ECMagicBar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B758CD103E1A949215EB7D8440C5EEB2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -86,9 +86,9 @@
 		DD1B13BA2B762B200AD0CFE71DF63B53 /* Pods-ECMagicBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ECMagicBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E8CC640FD3234A3BD9756B49E42264CF /* ECMagicBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ECMagicBar.debug.xcconfig; sourceTree = "<group>"; };
 		ECEA0A318BDA6E7DF43DB6A6342D7EA0 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "ECMagicBar/Classes/UIView+Extension.swift"; sourceTree = "<group>"; };
-		F01D3FFD25474CBD21A781BCC974E847 /* Pods-ECMagicBar_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ECMagicBar_Tests"; path = Pods_ECMagicBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01D3FFD25474CBD21A781BCC974E847 /* Pods_ECMagicBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECMagicBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F103D8625F657C6EF8D046BCA440975C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		F8D65921FF29EBEA8C1EAE49E7B22B17 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F8D65921FF29EBEA8C1EAE49E7B22B17 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,10 +233,10 @@
 		FB14A736B70FB1E4D7DE44F5010F4DA1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27747D4EC91225B575275481FF7353CE /* ECMagicBar */,
-				AC64B97E6CC2C081724B3E0A4A27B9E5 /* ECMagicBar-ECMagicBar */,
-				8AFD3275851D4A6336FC86A48C45A59D /* Pods-ECMagicBar_Example */,
-				F01D3FFD25474CBD21A781BCC974E847 /* Pods-ECMagicBar_Tests */,
+				27747D4EC91225B575275481FF7353CE /* ECMagicBar.framework */,
+				AC64B97E6CC2C081724B3E0A4A27B9E5 /* ECMagicBar.bundle */,
+				8AFD3275851D4A6336FC86A48C45A59D /* Pods_ECMagicBar_Example.framework */,
+				F01D3FFD25474CBD21A781BCC974E847 /* Pods_ECMagicBar_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -303,7 +303,7 @@
 			);
 			name = ECMagicBar;
 			productName = ECMagicBar;
-			productReference = 27747D4EC91225B575275481FF7353CE /* ECMagicBar */;
+			productReference = 27747D4EC91225B575275481FF7353CE /* ECMagicBar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8C043450E490219CD17C3D15EFC37DF5 /* ECMagicBar-ECMagicBar */ = {
@@ -320,7 +320,7 @@
 			);
 			name = "ECMagicBar-ECMagicBar";
 			productName = ECMagicBar;
-			productReference = AC64B97E6CC2C081724B3E0A4A27B9E5 /* ECMagicBar-ECMagicBar */;
+			productReference = AC64B97E6CC2C081724B3E0A4A27B9E5 /* ECMagicBar.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		A20C879868573D04C2EBE3E5011AFCC0 /* Pods-ECMagicBar_Example */ = {
@@ -339,7 +339,7 @@
 			);
 			name = "Pods-ECMagicBar_Example";
 			productName = Pods_ECMagicBar_Example;
-			productReference = 8AFD3275851D4A6336FC86A48C45A59D /* Pods-ECMagicBar_Example */;
+			productReference = 8AFD3275851D4A6336FC86A48C45A59D /* Pods_ECMagicBar_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D0B6131535A89F10C4314B6B49F04B82 /* Pods-ECMagicBar_Tests */ = {
@@ -358,7 +358,7 @@
 			);
 			name = "Pods-ECMagicBar_Tests";
 			productName = Pods_ECMagicBar_Tests;
-			productReference = F01D3FFD25474CBD21A781BCC974E847 /* Pods-ECMagicBar_Tests */;
+			productReference = F01D3FFD25474CBD21A781BCC974E847 /* Pods_ECMagicBar_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -418,7 +418,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0334BE5BC7F3291EE8FD88D4480E1087 /* ECMagicBar-ECMagicBar in Resources */,
+				0334BE5BC7F3291EE8FD88D4480E1087 /* ECMagicBar.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +494,7 @@
 				PRODUCT_NAME = ECMagicBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -552,7 +553,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -591,6 +592,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -624,6 +626,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -656,6 +659,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -685,6 +689,7 @@
 				PRODUCT_NAME = ECMagicBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -716,6 +721,7 @@
 				PRODUCT_NAME = ECMagicBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -775,13 +781,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -798,6 +803,7 @@
 				PRODUCT_NAME = ECMagicBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -829,6 +835,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
