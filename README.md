@@ -1,6 +1,6 @@
 # ECMagicBar
 
-[![CI Status](https://img.shields.io/travis/Eduard Calero/ECMagicBar.svg?style=flat)](https://travis-ci.org/Eduard Calero/ECMagicBar)
+[![CI Status](https://img.shields.io/travis/UOCecalero/ECMagicBar.svg?style=flat)](https://travis-ci.org/UOCecalero/ECMagicBar)
 [![Version](https://img.shields.io/cocoapods/v/ECMagicBar.svg?style=flat)](https://cocoapods.org/pods/ECMagicBar)
 [![License](https://img.shields.io/cocoapods/l/ECMagicBar.svg?style=flat)](https://cocoapods.org/pods/ECMagicBar)
 [![Platform](https://img.shields.io/cocoapods/p/ECMagicBar.svg?style=flat)](https://cocoapods.org/pods/ECMagicBar)
