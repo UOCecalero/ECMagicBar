@@ -25,11 +25,11 @@ A customizable chat textbar inspired in whatssap iOS app. You can implement your
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'ECMagicBar/Classes/**/*'
+  s.source_files = 'Sources/ECMagicBar/Classes/**/*'
   
 #  s.resources = "ECMagicBar/Assets/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
    s.resource_bundles = {
-     'ECMagicBar' => ['ECMagicBar/**/*.xib']
+     'ECMagicBar' => ['Sources/ECMagicBar/**/*.xib']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
