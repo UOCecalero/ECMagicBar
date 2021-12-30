@@ -1,0 +1,4 @@
+module ECMagicBar {
+    header "/Users/eduardcalero/Documents/Libraries/ECMagicBar/.build/x86_64-apple-macosx/debug/ECMagicBar.build/ECMagicBar-Swift.h"
+    requires objc
+}

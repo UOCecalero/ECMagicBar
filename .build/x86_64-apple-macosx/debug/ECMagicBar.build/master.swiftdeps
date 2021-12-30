@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)"
+options: "c2657eeeb6cab01edeeb293e79979fc400d803e13185dc0ba38a236d5699d78f"
+build_start_time: [1640884542, 830194950]
+build_end_time: [1640884543, 873857975]
+inputs:
+  ? "/Users/eduardcalero/Documents/Libraries/ECMagicBar/.build/x86_64-apple-macosx/debug/ECMagicBar.build/DerivedSources/resource_bundle_accessor.swift"
+  : [1640883756, 427913665]
+  "/Users/eduardcalero/Documents/Libraries/ECMagicBar/Sources/ECMagicBar/Classes/ECMagicBarView.swift": [1640806284, 203112125]
+  "/Users/eduardcalero/Documents/Libraries/ECMagicBar/Sources/ECMagicBar/Classes/UIView+Extension.swift": [1640884539, 251915454]
